@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+
+rabbitmq:
+  queue: test
+  exchange:
+  routing-key:
+  reply-time-out: 3000
+  username: guest
+  password: guest
+  host: localhost
+  virtual-host: dong
+  concurrent-consumers: 3
+  max-concurrent-consumers: 3
+  prefetch : 1
