@@ -21,20 +21,6 @@ public class RabbitMQProperties {
     private Integer maxConcurrentConsumers;
     private Integer prefetch;
 
-//    public RabbitMQProperties(Builder builder) {
-//        this.queue = builder.defaultReceiveQueue;
-//        this.host = builder.host;
-//        this.virtualHost = builder.virtualHost;
-//        this.username = builder.username;
-//        this.password = builder.password;
-//        this.exchange = builder.exchange;
-//        this.routingKey = builder.routingKey;
-//        this.replyTimeOut = builder.replyTimeOut;
-//        this.concurrentConsumers = builder.concurrentConsumers;
-//        this.maxConcurrentConsumers = builder.maxConcurrentConsumers;
-//        this.prefetch = builder.prefetch;
-//    }
-
     public Queue getQueue() {
         return queue;
     }
@@ -122,79 +108,4 @@ public class RabbitMQProperties {
     public void setPrefetch(Integer prefetch) {
         this.prefetch = prefetch;
     }
-
-//    public static class Builder {
-//
-//        private String host;
-//        private String virtualHost;
-//        private String username;
-//        private String password;
-//        private String exchange;
-//        private String routingKey;
-//        private Queue defaultReceiveQueue;
-//        private Integer replyTimeOut;
-//        private Integer concurrentConsumers;
-//        private Integer maxConcurrentConsumers;
-//        private Integer prefetch;
-//
-//
-//        public Builder host(String host) {
-//            this.host = host;
-//            return this;
-//        }
-//
-//        public Builder virtualHost(String virtualHost) {
-//            this.virtualHost = virtualHost;
-//            return this;
-//        }
-//
-//        public Builder username(String username) {
-//            this.username = username;
-//            return this;
-//        }
-//
-//        public Builder password(String password) {
-//            this.password = password;
-//            return this;
-//        }
-//
-//        public Builder exchange(String exchange) {
-//            this.exchange = exchange;
-//            return this;
-//        }
-//
-//        public Builder routingKey(String routingKey) {
-//            this.routingKey = routingKey;
-//            return this;
-//        }
-//
-//        public Builder defaultReceiveQueue(String defaultReceiveQueue) {
-//            this.defaultReceiveQueue = new Queue(defaultReceiveQueue, true);
-//            return this;
-//        }
-//
-//        public Builder concurrentConsumers(Integer concurrentConsumers) {
-//            this.concurrentConsumers = concurrentConsumers;
-//            return this;
-//        }
-//
-//        public Builder maxConcurrentConsumers(Integer maxConcurrentConsumers) {
-//            this.maxConcurrentConsumers = maxConcurrentConsumers;
-//            return this;
-//        }
-//
-//        public Builder replyTimeout(Integer replyTimeOut) {
-//            this.replyTimeOut = replyTimeOut;
-//            return this;
-//        }
-//        public Builder prefetch(Integer prefetch){
-//            this.prefetch =prefetch;
-//            return this;
-//        }
-//
-//        public RabbitMQProperties build() {
-//            return new RabbitMQProperties(this);
-//        }
-//
-//    }
 }
